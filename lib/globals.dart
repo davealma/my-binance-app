@@ -2,7 +2,8 @@ library my_app.globals;
 
 import 'package:binance_app/models/user_model.dart';
 
-List<UserModel> users = [];
+UserModel firstU = UserModel('admin@mail.com', 'admin');
+List<UserModel> users = [firstU];
 
 registerUser({required String email, required String password}) {
   UserModel user = UserModel(email, password);
